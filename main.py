@@ -15,7 +15,7 @@ app.add_middleware(
 
 
 @app.get("/")
-def hello():
+def read_root():
     return {"Hello": "Visit /docs for documentation"}
 
 app.include_router(router, prefix="/sketch", tags=["sketch"])
